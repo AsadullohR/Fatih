@@ -1,0 +1,44 @@
+#contact {
+  text-align: center;
+}
+
+#contact i {
+  margin-bottom: 2rem;
+}
+.contact-heading {
+  margin: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 2rem;
+}
+
+.address {
+  display: inline-block;
+  margin: 4rem;
+}
+.address p {
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.address a {
+  color: #161616;
+}
+
+.phone-number {
+  display: inline-block;
+  margin: 4rem;
+  margin-bottom: 5rem;
+  position: relative;
+  top: -1.3rem;
+}
+
+.phone-number i {
+  margin-bottom: 2.5rem;
+}
+
+.phone-number p {
+  padding: 0.5rem;
+  color: #161616;
+}

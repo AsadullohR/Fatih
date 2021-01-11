@@ -1,20 +1,29 @@
 .masjid-overview {
   background: url(images/prayer-beads-candle-near-religious-book.jpg);
   width: 100%;
-  height: 700px;
+  height: 58rem;
   padding: 10px;
   color: white;
+  position: relative;
+  z-index: -1;
 }
 
 .masjid-overview h1 {
+  width: 40%;
   font-family: "Cormorant Garamond", sans-serif;
   font-weight: semi-bold;
   text-align: left;
-  font-size: 60px;
+  font-size: 6rem;
+  position: absolute;
+  bottom: 23rem;
+  left: 17rem;
 }
 
 .masjid-overview p {
   font-size: 20px;
+  position: absolute;
+  bottom: 21rem;
+  left: 17.5rem;
 }
 
 #about {
@@ -35,12 +44,12 @@
 
 .about-container {
   width: 430px;
-  height: 430px;
+  height: 450px;
   background: #6d3971;
   float: right;
   vertical-align: middle;
   text-align: left;
-  padding: 20px;
+  padding: 70px;
   margin: 150px 200px 100px 0px;
 }
 
@@ -48,12 +57,13 @@
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 40px;
   color: #fff6ef;
+  margin-bottom: 1.2rem;
 }
 
 .about-container p {
   font-size: 17px;
   color: #fff6ef;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   font-weight: 300;
 }
 
@@ -138,6 +148,7 @@
 }
 
 #news {
+  width: 100%;
   margin: 0;
   padding: 60px;
   display: inline-block;
@@ -157,16 +168,27 @@
 .news-container {
   display: inline-block;
   background: #fff6ef;
-  padding: 40px;
-  margin: 40px 60px;
+  padding: 60px;
+  margin: 40px 50px;
   /* margin-left: 80px; */
   text-align: center;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .news-container img {
   padding: 0;
   width: 70%;
+}
+
+.news-container h3 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #6b3760;
+}
+
+.news-container p {
+  color: #6d3971;
 }
 
 #donate {
@@ -178,7 +200,7 @@
 }
 
 .donate-container {
-  margin: 200px 550px;
+  margin: 200px 500px;
   padding: 60px;
   width: 35%;
   background-color: white;
@@ -188,6 +210,7 @@
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 30px;
   color: #6b3760;
+  margin-bottom: 1.5rem;
 }
 
 .donate-container p {
