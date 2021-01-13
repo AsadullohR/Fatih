@@ -1,5 +1,7 @@
 .masjid-overview {
-  background: url(images/prayer-beads-candle-near-religious-book.jpg);
+  background-image: url(images/prayer-beads-candle-near-religious-book.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 58rem;
   padding: 10px;

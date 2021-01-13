@@ -131,7 +131,7 @@ body {
 .main-footer__link {
   display: inline-block;
   margin: 0 16px;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
 }
 
 .main-footer__link a {
