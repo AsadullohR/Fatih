@@ -36,6 +36,7 @@ body::-webkit-scrollbar {
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
+  display: inline-block;
 }
 .toggle-button:focus {
   outline: none;
@@ -48,6 +49,22 @@ body::-webkit-scrollbar {
   display: block;
   margin: 0.3rem 0;
   border-radius: 8px;
+}
+
+.mobile-cta-btn a {
+  width: calc(100%-10);
+  text-align: right;
+  display: inline-block;
+  color: white;
+  background-color: #6d3971;
+  padding: 0.3rem 0.5rem;
+  padding-bottom: 0.1;
+  border-radius: 5px;
+  vertical-align: middle;
+
+  /* margin-left: 75vw; */
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 /* MOBILE VIEW OF BRAND */
@@ -96,14 +113,16 @@ body::-webkit-scrollbar {
   .brand-name {
     font-family: "Cormorant Garamond", sans-serif;
     float: left;
-    margin-top: 50px;
-    margin-left: 8px;
+    margin-top: 3.2rem;
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
   }
 
   .brand-subname {
     float: left;
-    margin-top: 90px;
-    margin-left: -12.15rem;
+    margin-top: 5.4rem;
+    margin-left: -9.8rem;
   }
 }
 
@@ -133,19 +152,6 @@ body::-webkit-scrollbar {
 
 .main-nav {
   display: none;
-}
-
-.mobile-cta-btn a {
-  display: inline-block;
-  color: white;
-  background-color: #6d3971;
-  padding: 0.3rem 0.5rem;
-  padding-bottom: 0.1;
-  border-radius: 5px;
-  vertical-align: middle;
-  margin-left: 60vw;
-  font-size: 1rem;
-  text-decoration: none;
 }
 
 @media (min-width: 40rem) {
