@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatih Masjid</title>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
@@ -12,31 +13,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="shared/shared.css">
 </head>
 
 <body>
+    <div class="backdrop"></div>
     <div class="brand">
         <img class="brand-img" src="images/naqsh.jpg" alt="">
         <h1 class="brand-name "><a href="/">Fatih Masjid</a></h1>
         <p class="brand-subname">Assalamu alaykum</p>
     </div>
     <header class="main-header">
-        <!-- <div>
-            <a href="index.html" class="main-header__brand">Fatih</a>
-        </div> -->
+        <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+            <span class="mobile-cta-btn"><a href="donate.html">Donate</a></span>
+
+        </div>
         <nav class="main-nav">
             <ul class="main-nav__items">
-                <li class="main-nav__item"><a href="/">Home</a></li>
-                <li class="main-nav__item"><a href="/about.html">About</a></li>
-                <li class="main-nav__item"><a href="/events.html">Events</a></li>
-                <li class="main-nav__item"><a href="/contact.html">Contact</a></li>
-                <li class="main-nav__item main-nav__item--cta"><a href="/donate.html">Donate</a></li>
+                <li class="main-nav__item"><a href="index.html">Home</a></li>
+                <li class="main-nav__item"><a href="about.html">About</a></li>
+                <li class="main-nav__item"><a href="events.html">Events</a></li>
+                <li class="main-nav__item"><a href="contact.html">Contact</a></li>
+                <li class="main-nav__item main-nav__item--cta"><a href="donate.html">Donate</a></li>
             </ul>
-
         </nav>
     </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="about.html">About</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="events.html">Events</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="donate.html">Donate</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <section id="main">
             <div class="masjid-overview">
@@ -47,7 +75,7 @@
 
         <section id="about">
             <div class="about-main">
-                <img class="about-img" src="images/naqsh.jpg" alt="">
+                <img class="about-img" src="/images/naqshmain.webp" alt="">
                 <div class="about-container">
                     <h2>About the Masjid</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -57,10 +85,9 @@
                         and scrambled it to make a type specimen book. It has survived not only five centuries, but also
                         the
                     </p>
-                    <button>Read More > </button>
+                    <button type="button" class="about-btn">Read More > </button>
                 </div>
             </div>
-
         </section>
 
         <section id="praying-times">
@@ -79,25 +106,93 @@
                     <li class="pt-row__item2"><span>Isha'a-</span> 9:34 pm</li>
                 </ul>
             </div>
+
+            <p class="source">Source: <a href="https://www.fazilettakvimi.com/namaz-vakitleri/">Fazilet Takvimi</a></p>
+        </section>
+
+        <section id="carousel-news">
+            <h2>News & Updates</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner center">
+                    <div class="carousel-item active">
+                        <div class="col card" style="width: 20rem;">
+                            <img class="card-img-top d-block" src="/images/welcome.jpg" alt="">
+                            <div class="card-body">
+                                <h3>New Prayer Arrangments</h3>
+                                <p class="card-text">Here will be some info...</p>
+                                <a href="events.html" class="btn btn-dark">Lets's Check</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col card" style="width: 20rem;">
+                            <img class="card-img-top" src="/images/naqsh.jpg" alt="">
+                            <div class="card-body">
+                                <h3>New Prayer Arrangments</h3>
+                                <p class="card-text">Here will be some info...</p>
+                                <a href="events.html" class="btn btn-dark">Let's Check</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col card" style="width: 20rem;">
+                            <img class="card-img-top" src="/images/mosque.jpg" alt="">
+                            <div class="card-body">
+                                <h3>New Prayer Arrangments</h3>
+                                <p class="card-text">Here will be some info...</p>
+                                <a href="events.html" class="btn btn-dark">Let's Check</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </section>
 
         <section id="news">
             <h2>News & Updates</h2>
 
-            <div class="news-container">
-                <img src="images/naqsh.jpg" alt="">
-                <h3>New Prayer Arrangments</h3>
-                <p>Here will be some info...</p>
-            </div>
-            <div class="news-container">
-                <img src="images/naqsh.jpg" alt="">
-                <h3>New Prayer Arrangments</h3>
-                <p>Here will be some info...</p>
-            </div>
-            <div class="news-container">
-                <img src="images/naqsh.jpg" alt="">
-                <h3>New Prayer Arrangments</h3>
-                <p>Here will be some info...</p>
+            <div class="row">
+                <div class="col card" style="width: 20rem;margin-bottom: -4rem;">
+                    <img class="card-img-top" src="/images/naqsh.jpg" alt="">
+                    <div class="card-body">
+                        <h3>New Prayer Arrangments</h3>
+                        <p class="card-text">Here will be some info...</p>
+                        <a href="events.html" class="btn btn-dark">Let's Check</a>
+
+                    </div>
+                </div>
+                <div class="col card" style="width: 20rem;margin-bottom: -4rem;">
+                    <img class="card-img-top" src="images/naqsh.jpg" alt="">
+                    <div class="card-body">
+                        <h3>New Prayer Arrangments</h3>
+                        <p>Here will be some info...</p>
+                        <a href="events.html" class="btn btn-dark">Let's Check</a>
+
+                    </div>
+                </div>
+                <div class="col card" style="width: 20rem; margin-bottom: -4rem;">
+                    <img class="card-img-top" src="/images/naqsh.jpg" alt="">
+                    <div class="card-body">
+                        <h3>New Prayer Arrangments</h3>
+                        <p>Here will be some info...</p>
+                        <a href="events.html" class="btn btn-dark">Let's Check</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -106,7 +201,7 @@
                 <h3>Make Donation</h3>
                 <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
                     double click me to add your own content and make changes to the font.</p>
-                <button>Donate</button>
+                <button class="donate-btn">Donate</button>
             </div>
         </section>
 
@@ -115,10 +210,10 @@
         <nav>
             <ul class="main-footer__links">
                 <li class="main-footer__link">
-                    <a href="/contact.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li class="main-footer__link">
-                    <a href="/about.html">About</a>
+                    <a href="about.html">About</a>
                 </li>
             </ul>
         </nav>
@@ -126,7 +221,16 @@
         <span class="copyright">©2021 Created with 🧡 in Warsaw, by <a href="https://www.asadulloh.com">Asadulloh</a>
         </span>
     </footer>
-    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="shared/index.js"></script>
 </body>
 
 

@@ -1,71 +1,80 @@
+/*MOBILE VIEW OF OVERVIEW SEC */
 .masjid-overview {
-  background-image: url(images/prayer-beads-candle-near-religious-book.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 58rem;
-  padding: 10px;
+  height: 60vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 85%, transparent),
+    url(/images/prayer-beads-candle-near-religious-book.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
   color: white;
   position: relative;
+  text-align: left;
   z-index: -1;
 }
 
 .masjid-overview h1 {
-  width: 40%;
+  width: 50%;
   font-family: "Cormorant Garamond", sans-serif;
   font-weight: semi-bold;
-  text-align: left;
-  font-size: 6rem;
+  font-size: 2.6rem;
   position: absolute;
-  bottom: 23rem;
-  left: 17rem;
+  top: 7.5rem;
+  left: 7rem;
 }
 
 .masjid-overview p {
-  font-size: 20px;
+  width: 50%;
+  font-size: 1.2rem;
   position: absolute;
-  bottom: 21rem;
-  left: 17.5rem;
+  top: 14rem;
+  left: 7rem;
+  font-weight: lighter;
 }
 
-#about {
-  background-color: black;
-}
+/* MOBILE VIEW OF ABOUT SEC */
 
 .about-main {
-  display: block;
-  background: black;
-  width: 100%;
+  position: relative;
+  background: white;
+  text-align: center;
+  height: 75vh;
+  z-index: -1;
 }
 .about-img {
-  margin: 140px 0px 130px 300px;
-  width: 480px;
-  height: 480px;
-  vertical-align: middle;
+  position: relative;
+  margin: 8rem, auto;
+  margin-bottom: 4rem;
+  width: 70%;
+  height: 50%;
+  top: 17rem;
+  bottom: 5rem;
 }
 
 .about-container {
-  width: 430px;
-  height: 450px;
+  position: absolute;
+  width: 25rem;
+  height: 21.5rem;
   background: #6d3971;
-  float: right;
+  top: 3rem;
+  right: 0.1rem;
   vertical-align: middle;
   text-align: left;
-  padding: 70px;
-  margin: 150px 200px 100px 0px;
+  padding: 2rem;
+  border-radius: 6px;
 }
 
 .about-container h2 {
   font-family: "Cormorant Garamond", sans-serif;
-  font-size: 40px;
+  font-size: 1.8rem;
   color: #fff6ef;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .about-container p {
-  font-size: 17px;
+  font-size: 1rem;
   color: #fff6ef;
-  line-height: 1.7rem;
+  line-height: 1.5rem;
   font-weight: 300;
 }
 
@@ -85,6 +94,7 @@
   color: #6d3971;
 }
 
+/* MOBILE VIEW FOR PRAYING_TIMES SEC */
 #praying-times {
   background: #fff6ef;
   padding: 10px;
@@ -93,9 +103,11 @@
 
 #praying-times h2 {
   width: 100%;
-  margin: 100px 0;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   font-family: "Cormorant Garamond", sans-serif;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 500;
   color: #6d3971;
   text-align: center;
@@ -119,9 +131,10 @@
 }
 
 .pt-row__item {
-  display: inline-block;
-  margin: 60px 120px;
-  font-size: 20px;
+  display: block;
+  margin: auto;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
   color: #6d3971;
   font-weight: 300;
   text-align: center;
@@ -136,76 +149,89 @@
 .pt-row__items2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 100px;
+  margin-bottom: 3rem;
   list-style: none;
 }
 
 .pt-row__item2 {
-  display: inline-block;
-  margin: 50px 120px;
+  display: block;
+  margin: auto;
+  margin-bottom: 1.3rem;
   font-size: 20px;
   color: #6d3971;
   font-weight: 300;
   text-align: center;
 }
 
-#news {
-  width: 100%;
-  margin: 0;
-  padding: 60px;
-  display: inline-block;
-  text-align: center;
+.source {
+  margin-bottom: 3.5rem;
 }
 
-#news h2 {
+/* MOBILE VIEW FOR NEWS SEC */
+#carousel-news {
+  display: block;
+  text-align: center;
+  z-index: -1;
+}
+#carousel-news h2 {
   width: 100%;
   margin: 100px 0;
+  margin-bottom: 2rem;
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 40px;
   font-weight: 500;
   color: #6d3971;
   text-align: center;
 }
-
-.news-container {
-  display: inline-block;
+.card {
   background: #fff6ef;
-  padding: 60px;
-  margin: 40px 50px;
-  /* margin-left: 80px; */
-  text-align: center;
   cursor: pointer;
   border-radius: 8px;
+  z-index: -1;
+  margin: 1.5rem;
+  margin-left: 3rem;
 }
 
-.news-container img {
-  padding: 0;
-  width: 70%;
-}
-
-.news-container h3 {
+.card h3 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   color: #6b3760;
 }
 
-.news-container p {
+.card p {
   color: #6d3971;
 }
+/* .carousel-control-prev-icon {
+  color: #6b3760;
+}
+.carousel-control-next {
+  color: #6b3760;
+} */
+#news {
+  display: none;
+}
 
+/* MOBILE VIEW FOR DONATE SEC */
 #donate {
+  margin-top: 5rem;
   padding: 10px;
-  background: #fff6ef;
+  background: url(/images/mosque.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 750px;
+  height: 75vh;
   text-align: center;
+  position: relative;
 }
 
 .donate-container {
-  margin: 200px 500px;
-  padding: 60px;
-  width: 35%;
+  padding: 2rem 2.5rem;
+  width: 80vw;
   background-color: white;
+  position: absolute;
+  top: 7rem;
+  left: 10vw;
+  border-radius: 3px;
 }
 
 .donate-container h3 {
@@ -236,4 +262,248 @@
   font-weight: semi-bold;
   color: white;
   background: #6d3971;
+}
+
+/* DESKTOP VIEW FOR DONATE SEC */
+@media (min-width: 40rem) {
+  #donate {
+    background: url(/images/mosque.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+  }
+
+  .donate-container {
+    padding: 3.5rem;
+    width: 35vw;
+    background-color: white;
+    position: absolute;
+    left: 32.5vw;
+    top: 10rem;
+    bottom: 15rem;
+  }
+
+  .donate-container h3 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 30px;
+    color: #6b3760;
+    margin-bottom: 1.5rem;
+  }
+
+  .donate-container p {
+    font-weight: 300;
+    color: #6d3971;
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+
+  .donate-container button {
+    margin-top: 20px;
+    padding: 15px;
+    font-family: "Cormorant Garamond";
+    font-size: 18px;
+    border: 1px solid;
+    color: #6d3971;
+    background: white;
+  }
+
+  .donate-container button:hover {
+    font-weight: semi-bold;
+    color: white;
+    background: #6d3971;
+  }
+}
+button:focus {
+  outline: 0;
+}
+
+/* DESKTOP VIEW OF OVERVIEW SEC */
+@media (min-width: 40rem) {
+  .masjid-overview {
+    background-size: cover;
+    width: 100%;
+    height: 58rem;
+    padding: 10px;
+  }
+
+  .masjid-overview h1 {
+    font-size: 5.6rem;
+    width: 40%;
+    top: 10rem;
+    left: 18rem;
+  }
+
+  .masjid-overview p {
+    width: 30%;
+    font-size: 2rem;
+    top: 23.5rem;
+    left: 18rem;
+  }
+}
+
+/* DESKTOP VIEW OF ABOUT SEC */
+@media (min-width: 40rem) {
+  .about-main {
+    position: relative;
+    background: white;
+    height: 100vh;
+    z-index: -1;
+  }
+  .about-img {
+    position: relative;
+    width: 42vw;
+    height: 83vh;
+    vertical-align: middle;
+    top: 5.5rem;
+  }
+  .about-container {
+    position: absolute;
+    width: 28rem;
+    height: 29rem;
+    background: #6d3971;
+    top: 10rem;
+    right: 17.5rem;
+    vertical-align: middle;
+    text-align: left;
+    padding: 70px;
+    border-radius: 6px;
+    margin-bottom: 10rem;
+  }
+
+  .about-container h2 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 40px;
+    color: #fff6ef;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-container p {
+    font-size: 17px;
+    color: #fff6ef;
+    line-height: 1.7rem;
+    font-weight: 300;
+  }
+
+  .about-container button {
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Cormorant Garamond";
+    font-size: 16px;
+    border: 1px solid;
+    background: #6d3971;
+    color: #fff6ef;
+  }
+}
+
+/* DESKTOP VIEW FOR PRAYING_TIMES SEC */
+@media (min-width: 40rem) {
+  #praying-times {
+    background: #fff6ef;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #praying-times h2 {
+    width: 100%;
+    margin: 100px 0;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #6d3971;
+    text-align: center;
+  }
+
+  #praying-times span {
+    font-weight: bold;
+    color: #6d3971;
+  }
+
+  .pt-row {
+    display: inline-block;
+    text-align: middle;
+    vertical-align: middle;
+  }
+
+  .pt-row__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pt-row__item {
+    display: inline-block;
+    margin: 60px 120px;
+    font-size: 20px;
+    color: #6d3971;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .pt-row2 {
+    display: inline-block;
+    text-align: middle;
+    vertical-align: middle;
+  }
+
+  .pt-row__items2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+    list-style: none;
+  }
+
+  .pt-row__item2 {
+    display: inline-block;
+    margin: 50px 120px;
+    font-size: 20px;
+    color: #6d3971;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+/* DESKTOP VIEW FOR NEWS SEC */
+@media (min-width: 40rem) {
+  #carousel-news {
+    display: none;
+  }
+  #news {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 60px;
+    text-align: center;
+  }
+
+  #news h2 {
+    width: 100%;
+    margin: 100px 0;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #6d3971;
+    text-align: center;
+  }
+
+  .card {
+    background: #fff6ef;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: -1;
+    margin: 1.5rem;
+  }
+
+  .card h3 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #6b3760;
+  }
+
+  .card p {
+    color: #6d3971;
+  }
 }
