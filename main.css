@@ -267,59 +267,6 @@
   background: #6d3971;
 }
 
-/* DESKTOP VIEW FOR DONATE SEC */
-@media (min-width: 40rem) {
-  #donate {
-    background: url(/images/mosque.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    position: relative;
-    top: 5rem;
-  }
-
-  .donate-container {
-    padding: 3.5rem;
-    width: 35vw;
-    background-color: white;
-    position: absolute;
-    left: 32.5vw;
-    top: 10rem;
-    bottom: 15rem;
-  }
-
-  .donate-container h3 {
-    font-family: "Cormorant Garamond", sans-serif;
-    font-size: 30px;
-    color: #6b3760;
-    margin-bottom: 1.5rem;
-  }
-
-  .donate-container p {
-    font-weight: 300;
-    color: #6d3971;
-    font-size: 20px;
-    line-height: 1.5rem;
-  }
-
-  .donate-container button {
-    margin-top: 20px;
-    padding: 15px;
-    font-family: "Cormorant Garamond";
-    font-size: 18px;
-    border: 1px solid;
-    color: #6d3971;
-    background: white;
-  }
-
-  .donate-container button:hover {
-    font-weight: semi-bold;
-    color: white;
-    background: #6d3971;
-  }
-}
 button:focus {
   outline: 0;
 }
@@ -508,5 +455,59 @@ button:focus {
 
   .card p {
     color: #6d3971;
+  }
+}
+
+/* DESKTOP VIEW FOR DONATE SEC */
+@media (min-width: 40rem) {
+  #donate {
+    background: url(/images/mosque.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+  }
+
+  .donate-container {
+    padding: 3.5rem;
+    width: 35vw;
+    background-color: white;
+    position: absolute;
+    left: 32.5vw;
+    top: 10rem;
+    bottom: 15rem;
+  }
+
+  .donate-container h3 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 30px;
+    color: #6b3760;
+    margin-bottom: 1.5rem;
+  }
+
+  .donate-container p {
+    font-weight: 300;
+    color: #6d3971;
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+
+  .donate-container button {
+    margin-top: 20px;
+    padding: 15px;
+    font-family: "Cormorant Garamond";
+    font-size: 18px;
+    border: 1px solid;
+    color: #6d3971;
+    background: white;
+  }
+
+  .donate-container button:hover {
+    font-weight: semi-bold;
+    color: white;
+    background: #6d3971;
   }
 }

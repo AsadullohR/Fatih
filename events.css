@@ -1,37 +1,50 @@
+#upcoming-events {
+  text-align: center;
+}
 .ue-heading {
   font-family: "Cormorant Garamond", sans-serif;
   color: #321833;
   text-align: center;
   padding: 3rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin-top: 3rem;
 }
-.news {
-  width: 100%;
-  display: inline-block;
-  padding: 3rem;
-  text-align: center;
+
+.row {
+  max-width: 75%;
+  margin: 0 auto;
+}
+.card {
+  width: 16rem;
+  margin: 0.2rem auto;
+  margin-bottom: 1rem;
 }
 
-.news-container {
-  margin: 0.2rem;
-  display: inline-block;
-  margin-bottom: 4rem;
-}
-
-.news-container img {
-  width: 27rem;
-  height: 25rem;
-}
-
-.news-container h2 {
+.card h2 {
   font-family: "Cormorant Garamond", sans-serif;
   color: #6d3971;
   margin-top: 1.5rem;
 }
 
-.news-container p {
+.card p {
   color: #6d3971;
   font-weight: 300;
   margin-top: 0.5rem;
+}
+
+@media (max-width: 17.5rem) {
+  .card {
+    width: 12rem;
+    margin-left: -0.4rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .ue-heading {
+    font-size: 3rem;
+  }
+
+  .card {
+    width: 18rem;
+  }
 }

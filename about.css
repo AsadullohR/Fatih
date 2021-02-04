@@ -2,41 +2,45 @@
   padding: 0.625rem;
   background-image: url(/images/about.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 46.88rem;
+  height: 35rem;
   text-align: center;
 }
 
 .about-info-container {
-  margin: 12.5rem 31.25rem;
-  padding: 3.75rem;
-  width: 35%;
+  margin: 7rem auto;
+  padding: 1rem;
+  width: 90%;
   background-color: white;
+  border-radius: 3px;
 }
 
 .about-info-container h3 {
   font-family: "Cormorant Garamond", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   color: #a67c68;
-  margin-bottom: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .about-info-container p {
   font-weight: 300;
   color: #cc9578;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .about-info-container button {
   margin-top: 1.25rem;
-  padding: 0.9375rem;
+  padding: 0.5rem;
   font-family: "Cormorant Garamond";
   font-size: 1.125rem;
   border: 1px solid;
   color: #cc9578;
   background: white;
+  border-radius: 3px;
 }
 
 .about-info-container button:hover {
@@ -45,17 +49,20 @@
   background: #cc9578;
 }
 
+/* MOBILE VIEW OF REYING TIMES SEC */
 #praying-times {
-  background: white;
-  padding: 0.625rem;
+  background: #fff6ef;
+  padding: 10px;
   text-align: center;
 }
 
 #praying-times h2 {
   width: 100%;
-  margin: 6.25rem 0;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   font-family: "Cormorant Garamond", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #6d3971;
   text-align: center;
@@ -79,9 +86,10 @@
 }
 
 .pt-row__item {
-  display: inline-block;
-  margin: 3.75rem 7.5rem;
-  font-size: 1.25rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
   color: #6d3971;
   font-weight: 300;
   text-align: center;
@@ -96,17 +104,117 @@
 .pt-row__items2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 6.25rem;
+  margin-bottom: 3rem;
   list-style: none;
 }
 
 .pt-row__item2 {
-  display: inline-block;
-  margin: 3.125rem 7.5rem;
-  font-size: 1.25rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 1.3rem;
+  font-size: 20px;
   color: #6d3971;
   font-weight: 300;
   text-align: center;
+}
+
+.source {
+  margin-bottom: 3.5rem;
+}
+/* DESKTOP VIEW OF ABOUT INFO SEC */
+@media (min-width: 40rem) {
+  #about-info {
+    padding: 0.625rem;
+    height: 46.88rem;
+  }
+
+  .about-info-container {
+    margin: 12.5rem 31.25rem;
+    padding: 3.75rem;
+    width: 35%;
+  }
+
+  .about-info-container h3 {
+    font-size: 1.875rem;
+  }
+
+  .about-info-container p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .about-info-container button {
+    margin-top: 1.25rem;
+    padding: 0.9375rem;
+    font-size: 1.125rem;
+  }
+}
+
+/* DESKTOP VIEW OF PRAYING TIMES SEC */
+@media (min-width: 40rem) {
+  #praying-times {
+    background: white;
+    padding: 0.625rem;
+    text-align: center;
+  }
+
+  #praying-times h2 {
+    width: 100%;
+    margin: 6.25rem 0;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #6d3971;
+    text-align: center;
+  }
+
+  #praying-times span {
+    font-weight: bold;
+    color: #6d3971;
+  }
+
+  .pt-row {
+    display: inline-block;
+    text-align: middle;
+    vertical-align: middle;
+  }
+
+  .pt-row__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pt-row__item {
+    display: inline-block;
+    margin: 3.75rem 7.5rem;
+    font-size: 1.25rem;
+    color: #6d3971;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .pt-row2 {
+    display: inline-block;
+    text-align: middle;
+    vertical-align: middle;
+  }
+
+  .pt-row__items2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6.25rem;
+    list-style: none;
+  }
+
+  .pt-row__item2 {
+    display: inline-block;
+    margin: 3.125rem 7.5rem;
+    font-size: 1.25rem;
+    color: #6d3971;
+    font-weight: 300;
+    text-align: center;
+  }
 }
 
 button:focus {
