@@ -21,6 +21,7 @@
   position: absolute;
   top: 7.5rem;
   left: 7rem;
+  white-space: pre-wrap;
 }
 
 .masjid-overview p {
@@ -30,6 +31,7 @@
   top: 14rem;
   left: 7rem;
   font-weight: lighter;
+  /* white-space: pre-wrap; */
 }
 
 /* MOBILE VIEW OF ABOUT SEC */
@@ -62,6 +64,11 @@
   text-align: left;
   padding: 2rem;
   border-radius: 6px;
+}
+
+.about-container:hover,
+.about-container:active {
+  animation: push_up 1s ease-out forwards;
 }
 
 .about-container h2 {
@@ -509,5 +516,17 @@ button:focus {
     font-weight: semi-bold;
     color: white;
     background: #6d3971;
+  }
+}
+
+@keyframes push_up {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(1rem);
   }
 }
